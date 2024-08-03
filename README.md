@@ -36,62 +36,62 @@ Welcome to Farmers vs Lord, a web-based version of the popular Chinese card game
 
 ### Clone the repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/your_username/farmersVsLord.git
 cd farmersVsLord
-\`\`\`
+```
 
 ### Back-end setup
 
-1. Navigate to the \`backend\` directory:
+1. Navigate to the `backend` directory:
 
-    \`\`\`bash
+    ```bash
     cd backend
-    \`\`\`
+    ```
 
 2. Build the project using Maven:
 
-    \`\`\`bash
+    ```bash
     mvn clean install
-    \`\`\`
+    ```
 
 3. Run the Spring Boot application:
 
-    \`\`\`bash
+    ```bash
     mvn spring-boot:run
-    \`\`\`
+    ```
 
-The back-end server should now be running on \`http://localhost:8080\`.
+The back-end server should now be running on `http://localhost:8080`.
 
 ### Front-end setup
 
-1. Navigate to the \`frontend\` directory:
+1. Navigate to the `frontend` directory:
 
-    \`\`\`bash
+    ```bash
     cd ../frontend
-    \`\`\`
+    ```
 
 2. Install the required npm packages:
 
-    \`\`\`bash
+    ```bash
     npm install
-    \`\`\`
+    ```
 
 3. Start the React development server:
 
-    \`\`\`bash
+    ```bash
     npm start
-    \`\`\`
+    ```
 
-The front-end should now be running on \`http://localhost:3000\`.
+The front-end should now be running on `http://localhost:3000`.
 
 ## Usage
 
-Once both the back-end and front-end servers are running, you can open your web browser and go to \`http://localhost:3000\` to start playing the game.
+Once both the back-end and front-end servers are running, you can open your web browser and go to `http://localhost:3000` to start playing the game.
 
 ## Project Structure
 
-\`\`\`plaintext
+```plaintext
 farmersVsLord/
 ├── backend/
 │   ├── src/
@@ -122,7 +122,7 @@ farmersVsLord/
 │       ├── index.js
 │       └── setupProxy.js
 └── package.json
-\`\`\`
+```
 
 ## Contributing
 
@@ -140,9 +140,3 @@ For any inquiries or feedback, please contact:
 - **Email:** your.email@example.com
 
 ---
-
-
-" > README.md
-git add README.md
-git commit -m "Add README.md"
-git push origin main

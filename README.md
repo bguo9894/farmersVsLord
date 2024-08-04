@@ -30,14 +30,14 @@ Welcome to Farmers vs Lord, a web-based version of the popular Chinese card game
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
-- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (v11 or higher)
+- [Java 17](Amazon Corretto recommended)
 - [Maven](https://maven.apache.org/install.html)
 - [Git](https://git-scm.com/)
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your_username/farmersVsLord.git
+git clone https://github.com/bguo9894/farmersVsLord.git
 cd farmersVsLord
 ```
 
@@ -92,36 +92,57 @@ Once both the back-end and front-end servers are running, you can open your web 
 ## Project Structure
 
 ```plaintext
-farmersVsLord/
+FarmersVsLord/
 ├── backend/
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── game/
-│   │   │   │           ├── model/
-│   │   │   │           │   ├── Card.java
-│   │   │   │           │   ├── Player.java
-│   │   │   │           │   ├── Game.java
-│   │   │   │           ├── service/
-│   │   │   │           │   ├── GameService.java
-│   │   │   │           ├── controller/
-│   │   │   │           │   └── GameController.java
-│   │   └── resources/
-│   │       └── application.properties
-│   └── pom.xml
+│   │   │   ├── java/com/game/farmersvslord/
+│   │   │   │   ├── controller/
+│   │   │   │   │   └── GameController.java
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── Card.java
+│   │   │   │   │   ├── Game.java
+│   │   │   │   │   └── Player.java
+│   │   │   │   ├── repository/
+│   │   │   │   │   ├── CardRepository.java
+│   │   │   │   │   └── PlayerRepository.java
+│   │   │   │   ├── service/
+│   │   │   │   │   └── GameService.java
+│   │   │   │   └── FarmersvslordApplication.java
+│   │   ├── resources/
+│   │   │   ├── static/
+│   │   │   ├── templates/
+│   │   │   └── application.properties
+│   ├── target/
+│   ├── .gitignore
+│   ├── HELP.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
 ├── frontend/
+│   ├── node_modules/
 │   ├── public/
-│   └── src/
-│       ├── components/
-│       │   ├── Board.js
-│       │   ├── Card.js
-│       │   ├── Player.js
-│       │   └── App.js
-│       ├── App.css
-│       ├── index.js
-│       └── setupProxy.js
-└── package.json
+│   │   └── index.html
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── react.svg
+│   │   ├── components/
+│   │   │   ├── Card.tsx
+│   │   │   ├── GameTable.tsx
+│   │   │   └── PlayerHand.tsx
+│   │   ├── styles/
+│   │   │   ├── tailwind.css
+│   │   │   └── index.css
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   ├── tailwind.config.js
+│   ├── postcss.config.cjs
+│   ├── vite-env.d.ts
+│   ├── .eslintrc.cjs
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   └── README.md
 ```
 
 ## Contributing

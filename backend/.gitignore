@@ -1,16 +1,18 @@
-# Compiled class file
+# Java related
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
-# BlueJ files
+# BlueJ files (BlueJ is a Java IDE for beginners)
 *.ctxt
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
+# JAR, WAR, EAR files
 *.jar
 *.war
 *.nar
@@ -23,30 +25,35 @@
 hs_err_pid*
 replay_pid*
 
-# Maven
+# Maven related
+# Maven build directory
 target/
+# Maven release plugin files
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
 release.properties
+# Maven shade plugin
 dependency-reduced-pom.xml
+# Maven build number plugin
 buildNumber.properties
+# Maven wrapper
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# Eclipse
+# Eclipse related
 .classpath
 .project
 .settings/
 
-# IntelliJ IDEA
+# IntelliJ IDEA related
 .idea/
 *.iml
 *.iws
 *.ipr
 
-# NetBeans
+# NetBeans related
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -54,24 +61,24 @@ buildNumber.properties
 /.nb-gradle/
 build/
 
-# VS Code
+# VS Code related
 .vscode/
 
+# OS generated files
 # Mac OS
 .DS_Store
-
 # Windows
 Thumbs.db
 
-# Spring Boot
+# Spring Boot related
 spring-boot-starter/
 spring-boot-devtools/
 
-# Application properties
+# Application properties (often contain sensitive information)
 src/main/resources/application.properties
 src/main/resources/application.yml
 
-# Logs
+# Log directory
 logs/
 
 # Temporary files
@@ -79,3 +86,17 @@ logs/
 *.swp
 *~.nib
 local.properties
+
+# Other common files to ignore
+# Backup files
+*~
+# Merge conflict files
+*.orig
+# Patch files
+*.patch
+# Diff files
+*.diff
+
+# Database files (if applicable)
+*.db
+*.sqlite

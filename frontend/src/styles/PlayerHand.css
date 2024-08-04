@@ -1,0 +1,43 @@
+/* Styles for the PlayerHand component */
+.player-hand {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    position: absolute;
+    bottom: 2rem;
+    /* Distance from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center horizontally */
+    height: 120px;
+    /* Adjust height as needed */
+    max-width: 100%;
+    /* Ensure the hand does not exceed screen width */
+    overflow-x: hidden;
+    /* Hide overflow content */
+    box-sizing: border-box;
+    padding: 0;
+    /* Remove padding to avoid additional space */
+}
+
+.player-hand .card {
+    position: relative;
+    transition: transform 0.2s ease;
+    margin-left: -2rem;
+    /* Slight overlap for card stacking */
+    z-index: 1;
+}
+
+.player-hand .card:first-child {
+    margin-left: 0;
+    /* No margin for the first card */
+}
+
+.player-hand .card:hover {
+    transform: translateY(-10px);
+    /* Slight lift on hover for a 3D effect */
+    z-index: 10;
+    /* Bring the hovered card to the front */
+}
